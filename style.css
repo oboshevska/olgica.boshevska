@@ -340,6 +340,35 @@ section .title{
 }
 
 
+#lmore{
+    position: relative;
+    text-align: center;
+    font-family: 'Noto Sans Display', sans-serif;
+    border: 2px solid #FF7066;
+    background-color: #FF7066;
+    color: #fff;
+   display: flex;
+   float: left;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#lmore:hover{
+    text-decoration: none;
+    color: #2174B4;
+    background: none;
+} 
+
+.nomore{
+    background: none!important;
+    border:1px solid #000;
+    color: #FF7066;
+}
 
 
 .about .about-content .left{
@@ -794,3 +823,25 @@ section .titlebl{
 .load__bl:hover{
     transform: scale(1.05);
 }
+@media (max-width: 1300px) {
+    .homebl .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1104px) {
+    .aboutbl .aboutbl-content .leftbl {
+        width: 350px;
+        height: 350px;
+    }
+    .homebl .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 947px){
+    .aboutbl .aboutbl-content .rightbl {
+        flex: 100%;
+       }
+}
+
