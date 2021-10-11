@@ -56,6 +56,15 @@ $(document).ready(function () {
         $('.col__l:hidden').slice(0, 1).slideDown()
 
     });
+    
+        $('.image').slice(0, 2).show();
+    $('#lmore').on('click', function (e) {
+        e.preventDefault();
+        $('.image:hidden').slice(0, 2).slideDown();
+        if ($('.image:hidden').length == 0) {
+            $('#lmore').text('No More Projects :(').addClass('nomore');
+        }
+    });
 
 
 });
